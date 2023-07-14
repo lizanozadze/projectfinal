@@ -1,0 +1,117 @@
+
+
+@import url("//cdn.web-fonts.ge/fonts/archyedt-bold/css/archyedt-bold.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999; 
+}
+
+.logo {
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.logo:hover {
+  background-color: #d20a0a;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #d20a0a;
+}
+
+
+main {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 80px;
+  display: flex;
+  position: relative;
+  background-image: url("https://miro.medium.com/v2/resize:fit:2700/1*9eRO_BO9iqxKp0fbsrqe8Q.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.sidebar {
+  font-family: "ArchyEDT-Bold", sans-serif;
+
+  background-color: #fff;
+  width: 120px;
+  padding: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #000;
+  text-decoration: none;
+  position: relative;
+}
+
+.sidebar ul li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  width: 6px;
+  height: 6px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  transform: translateY(-50%);
+}
+
+.sidebar ul li a:hover:before {
+  opacity: 1;
+}
+
+.content {
+  flex-grow: 1;
+  margin-top: 20%;
+  padding: 20px;
+  margin-left: 4%;
+  display: flex;
+  align-items: center;
+  color: #d20a0a;
+}
